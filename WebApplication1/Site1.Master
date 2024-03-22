@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+
+    <%--<script>
+        function handleButtonClick(buttonId) {
+            switch (buttonId) {
+                case 'Login_btn':
+                    alert("Login button clicked");
+                    break;
+                case 'Signup_btn'
+                    alert("SignUp button Clicked");
+                    break;
+                default:
+                    // Default behavior
+                    break;
+            }
+        }
+    </script>--%>
+
+
+
+</head>
+<body>
+    <form runat="server">
+        <div class="bg-light w-100 vh-100">
+            <div class="px-3 py-5">
+                <!-- Logo -->
+                <p>
+                    <img src="imgs/library.png" width="75" alt="Logo" />
+                    Student Portal
+                </p>
+
+                <!-- Welcome message and Login button -->
+                <center>Welcome to the website</center>
+
+                <div class="L_btn">
+                    <asp:Button ID="Login_btn" runat="server" CssClass="btn btn-primary" Text="Login" Width="93px" OnClick="Login_btn_Click" />
+                </div>
+                <div class="R_btn">
+                    <asp:Button ID="Signup_btn" runat="server" CssClass="btn btn-info" Text="Signup" Width="93px" OnClick="Signup_btn_Click" />
+                </div>
+
+                
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="Bootstrap/js/jquery.min.js"></script>
+    <!-- Popper.js -->
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿body {
+}
+Login_btn{
+    color:aqua;
+}
+.gridview-container {
+    float: right;
+    margin-top: 20px; /* Adjust margin-top as needed */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+.reset_btn{
+    color:red;
+}
+.btn btn-primary {
+    float: right;
+    margin-top: 20px; /* Adjust margin-top as needed */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+.L_btn{
+    float: right;
+}
+.form-control{
+    float:right;
+}
+.R_btn {
+    float: right;
+}
